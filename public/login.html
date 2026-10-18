@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Login – Help Desk</title></head>
+<body>
+<div id="nav"></div>
+<main class="page narrow">
+  <h1 data-i18n="authTitle"></h1>
+  <div class="tabs">
+    <button type="button" class="tab on" id="tLogin" data-i18n="tLogin"></button>
+    <button type="button" class="tab" id="tReg" data-i18n="tReg"></button>
+  </div>
+  <form id="af" class="authbox">
+    <label id="nameRow" hidden><span data-i18n="fName"></span><input id="name" autocomplete="name"></label>
+    <label><span data-i18n="fEmail"></span><input id="email" type="email" required autocomplete="email"></label>
+    <label><span data-i18n="fPass"></span><input id="pass" type="password" required minlength="6" autocomplete="current-password"></label>
+    <button class="btn" type="submit" id="go"></button>
+    <p class="err" id="aerr"></p>
+  </form>
+</main>
+<script src="common.js"></script><script src="auth.js"></script>
+</body></html>

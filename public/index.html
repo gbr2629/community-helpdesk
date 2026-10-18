@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Neighbourhood Help Desk</title></head>
+<body>
+<div id="nav"></div>
+<main class="wrap">
+  <section>
+    <span class="sign" data-i18n="sign"></span>
+    <h1 data-i18n="heroTitle"></h1>
+    <p class="lead" data-i18n="heroLead"></p>
+    <div class="facts">
+      <div class="fact"><h2 data-i18n="cGarb"></h2><p data-i18n="cGarbT"></p></div>
+      <div class="fact"><h2 data-i18n="cBus"></h2><p data-i18n="cBusT"></p></div>
+      <div class="fact"><h2 data-i18n="cHelp"></h2><p data-i18n="cHelpT"></p></div>
+    </div>
+    <a class="btn" href="services.html" data-i18n="browse"></a>
+  </section>
+  <section class="chat" aria-label="Chatbot">
+    <div class="chead"><span class="dot"></span><span data-i18n="chatTitle"></span></div>
+    <div class="msgs" id="msgs" aria-live="polite"></div>
+    <div class="quick" id="quick"></div>
+    <form id="f" autocomplete="off">
+      <input id="in" data-i18n-ph="ph" aria-label="Question">
+      <button class="send" type="submit" data-i18n="send"></button>
+    </form>
+  </section>
+</main>
+<script src="common.js"></script><script src="app.js"></script>
+</body></html>

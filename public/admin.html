@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"><title>Admin – Help Desk</title></head>
+<body>
+<div id="nav"></div>
+<main class="page">
+  <h1>Admin panel</h1>
+  <form id="login" class="loginbox" autocomplete="off">
+    <label>Password <input type="password" id="pw" required></label>
+    <button class="btn" type="submit">Log in</button>
+    <p class="err" id="lerr"></p>
+  </form>
+  <div id="dash" hidden>
+    <div class="stats" id="stats"></div>
+    <div class="tabs" id="tabs"></div>
+    <div id="panel"></div>
+    <p><button class="link" id="out" type="button">Log out</button></p>
+  </div>
+</main>
+<script src="common.js"></script><script src="admin.js"></script>
+</body></html>
